@@ -39,18 +39,24 @@ img{
         the major page sections
     */
 }
-.container {
+.main-container {
   margin: 0 auto;
   max-width: 1000px;
-
-}
-.main {
-  display: flex;
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top: -30px;
   
+
+
 }
 
 }
 #site-header{
+  margin: 0;
+  display: flex;
+
+
     /*
         TODO
         - Flexbox property here
@@ -60,6 +66,7 @@ img{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
+    background-image: url('./img/header-img.jpg');
 
     /*
         TODO:
@@ -92,6 +99,8 @@ img{
 }
 #main-navigation{
     background: #444;
+    flex-direction: row;
+    display: flex;
 
     /*
         TODO:
@@ -104,6 +113,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    margin: 0;
 
     /*
         TODO:
@@ -123,6 +133,9 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 60%;
+    position: relative;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -130,9 +143,12 @@ main{
     */
 }
 aside{
+    width: 20%;
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    position: relative;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -173,6 +189,9 @@ article time{
     color: #666;
 }
 article img{
+  float: right;
+  margin: 0 auto;
+  width: 20%;
     /*
         TODO:
         - Float article images to the right
@@ -180,6 +199,11 @@ article img{
     */
 }
 article footer p{
+  text-align: center;
+  margin: 0 auto;
+  border-top:1px solid #ccc;
+  padding-top: 10px;
+
     /*
         TODO:
         - Style the article footer
